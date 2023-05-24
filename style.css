@@ -14,6 +14,8 @@
     --lightblue: #96C9FF;
     --bubblegum: #E0BBFF;
     --poppy: #FDA897;
+    --plush: #FFC9DC;
+    --olive: #A3B474;
 }
 
 .absolute {
@@ -36,6 +38,14 @@
     width: 180px;
 }
 
+.gap-18 {
+    gap: 18px;
+}
+
+.gap-5 {
+    gap: 20px;
+}
+
 .gap-32 {
     gap: 32px;
 }
@@ -56,12 +66,36 @@
     background-color: #FBF8F5;
 }
 
-.rounded-1-5xl {
+.rounded-14 {
     border-radius: 14px;
 }
 
-.rounded-1-8xl {
+.rounded-15 {
     border-radius: 15px;
+}
+
+.rounded-78 {
+    border-radius: 78px;
+}
+
+.border-black-1 {
+    border: 1px solid var(--black-1);
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}
+
+.mt-8 {
+    margin-top: 32px;
 }
 
 .pt-26 {
@@ -94,6 +128,14 @@
 
 .border-b-silver {
     border-bottom: 1px solid #C4C4C4;
+}
+
+.underline-offset-3 {
+    text-underline-offset: 3px;
+}
+
+.shadow-small {
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -159,6 +201,10 @@ section h3 {
     color: var(--poppy);
 }
 
+.color-rose {
+    color: var(--rose);
+}
+
 .color-bubblegum {
     color: var(--bubblegum);
 }
@@ -189,6 +235,14 @@ section h3 {
 
 .bg-rose {
     background-color: var(--rose);
+}
+
+.bg-plush {
+    background-color: var(--plush);
+}
+
+.bg-olive {
+    background-color: var(--olive);
 }
 
 .text-xxs {
@@ -854,8 +908,36 @@ section h3 {
     border-radius: 15px;
 }
 
-.center-detail-page .rating-detail-box .rating-by-category{
-    margin-top: 24px;
+.center-detail-page .recommend-friend {
+    padding: 8px 22px;
+}
+
+.center-detail-page .rating-user .user-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.center-detail-page .similar-rating-box {
+    border-radius: 15px;
+    padding: 30px 33px;
+    gap: 17px;
+}
+
+.center-detail-page .write-review-btn {
+    width: 182px;
+    height: 40px;
+    padding: 10px;
+}
+
+.center-detail-page .review-section-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 700px;
+    z-index: -1;
+    background: #F8F1FF;
+    border-radius: 100px 0px 0px 0px;
 }
 
 @media only screen and (max-width: 1024px) {}
