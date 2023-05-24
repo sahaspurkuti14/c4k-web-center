@@ -436,6 +436,46 @@
           </div>
         </section>
 
+        <div class="keep-looking-cta-bg">
+          <div class="keep-looking-cta w-full h-full rounded-15 flex mt-8">
+            <img
+              loading="lazy"
+              src="https://staging-kiin.careforkids.com.au/img/homepage-banner-top.webp"
+              class="h-full object-cover"
+            />
+            <div
+              class="keep-looking-content flex flex-col items-start justify-center"
+            >
+              <h4 class="font-bold text-1xl color-black-1">
+                Interested in this centre but want to
+                <span class="italic font-normal">keep looking?</span>
+              </h4>
+              <span class="text-sm color-black-1"
+                >Share and add to your favouries for later</span
+              >
+              <div class="action-buttons flex w-full gap-2 mt-3">
+                <button
+                  class="btn-outline btn-outline-sm bg-white blue-outline-btn uppercase"
+                >
+                  Share
+                  <iconify-icon
+                    icon="tabler:send"
+                    class="text-lg"
+                  ></iconify-icon>
+                </button>
+                <button
+                  class="btn-outline btn-outline-sm bg-white rose-outline-btn uppercase"
+                >
+                  Save<iconify-icon
+                    icon="mdi:heart-outline"
+                    class="text-lg"
+                  ></iconify-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- <section class="know-us-section">
           <h2>Get to know us</h2>
           <div class="know-us-nav flex gap-2 items-center justify-between">
@@ -846,7 +886,9 @@
             <iconify-icon icon="ooui:next-ltr" class="text-sm"></iconify-icon>
           </div>
           <div class="flex justify-center">
-            <button class="write-review-btn flex justify-center items-center mt-6 rounded-78 border-black-1 color-black-1 text-base font-bold">
+            <button
+              class="write-review-btn flex justify-center items-center mt-6 rounded-78 border-black-1 color-black-1 text-base font-bold"
+            >
               Write a review
             </button>
           </div>
@@ -855,4 +897,155 @@
       <div class="review-section-bg absolute bottom-0 left-0 w-full"></div>
     </div>
   </body>
+
+  <!-- enquire popup - add 'active' in classname to open -->
+  <div class="enquire-popup active flex justify-center items-center">
+    <div class="rounded-20 bg-white shadow-small popup-container flex gap-85 relative">
+      <button class="close-btn absolute flex items-center justify-center text-white">
+        <iconify-icon icon="iconamoon:close" class="text-2xl"></iconify-icon>
+      </button>
+      <div class="flex flex-col items-center">
+        <div class="step-meter bg-gray relative rounded-25">
+          <span
+            class="bg-gradient-blue absolute top-0 left-0 h-full rounded-25"
+            style="width: 25%"
+          ></span>
+        </div>
+        <div class="w-full">
+          <h3 class="font-bold text-lg color-black-1" style="max-width: 200px">
+            What would you like to enquire about?
+          </h3>
+        </div>
+        <div class="grid grid-cols-2 mt-3 gap-10">
+          <div
+            class="enquire-type-card bg-sky-300 flex flex-col gap-2 items-center justify-center"
+          >
+            <iconify-icon
+              icon="majesticons:chat-line"
+              class="color-berry"
+            ></iconify-icon>
+            <span class="color-black-1 text-xs font-bold"
+              >Live Tour Booking</span
+            >
+          </div>
+          <div
+            class="enquire-type-card bg-light-200 flex flex-col gap-2 items-center justify-center"
+          >
+            <iconify-icon
+              icon="majesticons:chat-line"
+              class="color-berry"
+            ></iconify-icon>
+            <span class="color-black-1 text-xs font-bold"
+              >Live Tour Booking</span
+            >
+          </div>
+          <div
+            class="enquire-type-card bg-light-200 flex flex-col gap-2 items-center justify-center"
+          >
+            <iconify-icon
+              icon="majesticons:chat-line"
+              class="color-berry"
+            ></iconify-icon>
+            <span class="color-black-1 text-xs font-bold"
+              >Live Tour Booking</span
+            >
+          </div>
+          <div
+            class="enquire-type-card bg-light-200 flex flex-col gap-2 items-center justify-center"
+          >
+            <iconify-icon
+              icon="majesticons:chat-line"
+              class="color-berry"
+            ></iconify-icon>
+            <span class="color-black-1 text-xs font-bold"
+              >Live Tour Booking</span
+            >
+          </div>
+          <div
+            class="enquire-type-card bg-light-200 flex flex-col gap-2 items-center justify-center"
+          >
+            <iconify-icon
+              icon="majesticons:chat-line"
+              class="color-berry"
+            ></iconify-icon>
+            <span class="color-black-1 text-xs font-bold"
+              >Live Tour Booking</span
+            >
+          </div>
+          <div
+            class="enquire-type-card bg-light-200 flex flex-col gap-2 items-center justify-center"
+          >
+            <iconify-icon
+              icon="majesticons:chat-line"
+              class="color-berry"
+            ></iconify-icon>
+            <span class="color-black-1 text-xs font-bold"
+              >Live Tour Booking</span
+            >
+          </div>
+        </div>
+        <button
+          class="enquire-next-btn bg-rose flex items-center justify-center font-semibold text-base text-white"
+        >
+          Next
+        </button>
+      </div>
+      <div
+        class="bg-light-200 rounded-8 overflow-hidden flex flex-col"
+        style="max-width: 360px; overflow: hidden"
+      >
+        <div class="popup-image-container relative">
+          <div class="white-badge absolute top-15 left-15">
+            <iconify-icon
+              icon="ic:baseline-verified"
+              class="color-berry text-lg"
+            ></iconify-icon
+            ><span>Verified</span>
+          </div>
+          <img
+            src="https://www.careforkids.com.au/img/homepage-banner-top.webp"
+            class="h-full w-full object-cover"
+            loading="lazy"
+            alt="#"
+          />
+        </div>
+        <div class="enquire-popup-details flex flex-col gap-18">
+          <div class="flex gap-18 text-xs color-black-1">
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="iconamoon:star-fill"
+                class="color-yellow text-xs"
+              ></iconify-icon>
+              <span class="font-semibold">5.0</span><span> (17)</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="teenyicons:tick-circle-solid"
+                class="color-darkgreen text-xs"
+              ></iconify-icon>
+              <span>Vacancies</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="material-symbols:shield-outline"
+                class="color-skyblue text-xs"
+              ></iconify-icon>
+              <span>Exceeding NQS</span>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="color-black-1 font-bold text-lg"
+              >Sentia Early Learning</span
+            >
+            <span class="color-black-2 text-xxs"
+              >450 Flinders Street, Melbourne, VIC 3000</span
+            >
+          </div>
+          <div class="text-xs color-black-1 font-bold">
+            $175 <span class="font-normal">avg. price/day</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
