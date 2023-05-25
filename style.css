@@ -1,5 +1,6 @@
 :root {
     --skyblue: #51A5FF;
+    --sky-100: #E0EFFF;
     --sky-300: #C0DFFF;
     --sky-400: #ABD4FF;
     --berry: #5A60EC;
@@ -14,28 +15,47 @@
     --black-5: #141415;
     --gray: #F5F5F5;
     --light-200: #f7f7f7;
+    --light-500: #D9D9D9;
+    --light-600: #CACACA;
     --yellow: #FFC93E;
     --lightblue: #96C9FF;
     --bubblegum: #E0BBFF;
     --poppy: #FDA897;
     --plush: #FFC9DC;
     --olive: #A3B474;
+    --error: #F95050;
 }
 
 .absolute {
     position: absolute;
 }
 
-.grid-cols-2{
+.grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.top-15{
-    top:15px;
+.col-span-2 {
+    grid-column: span 2 / span 2;
 }
 
-.left-15{
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.top-15 {
+    top: 15px;
+}
+
+.left-15 {
     left: 15px;
+}
+
+.right-14 {
+    right: 14px;
+}
+
+.bottom-14 {
+    bottom: 14px;
 }
 
 .w-220 {
@@ -46,12 +66,24 @@
     width: 180px;
 }
 
-.gap-18 {
-    gap: 18px;
+.gap-x-1 {
+    column-gap: 4px;
+} 
+
+.gap-y-2 {
+    row-gap: 8px;
+}
+
+.gap-6 {
+    gap: 6px;
 }
 
 .gap-10 {
     gap: 10px;
+}
+
+.gap-18 {
+    gap: 18px;
 }
 
 .gap-5 {
@@ -90,12 +122,24 @@
     background-color: #FBF8F5;
 }
 
+.bg-sky-100 {
+    background-color: var(--sky-100);
+}
+
 .bg-sky-300 {
     background-color: var(--sky-300);
 }
 
 .bg-light-200 {
     background-color: var(--light-200);
+}
+
+.bg-light-500 {
+    background-color: var(--light-500);
+}
+
+.bg-black-3 {
+    background-color: var(--light-500);
 }
 
 .bg-gradient-blue {
@@ -124,6 +168,10 @@
 
 .rounded-78 {
     border-radius: 78px;
+}
+
+.rounded-full {
+    border-radius: 100%;
 }
 
 .border-black-1 {
@@ -258,6 +306,10 @@ section h3 {
     color: var(--rose);
 }
 
+.color-error {
+    color: var(--error);
+}
+
 .color-bubblegum {
     color: var(--bubblegum);
 }
@@ -266,12 +318,16 @@ section h3 {
     color: var(--darkgreen);
 }
 
-.color-skyblue {
+.color-skyblue , .color-sky-800{
     color: var(--skyblue);
 }
 
 .color-sky-400 {
     color: var(--sky-400);
+}
+
+.color-light-600 {
+    color: var(--light-600);
 }
 
 .bg-lightblue {
@@ -282,7 +338,7 @@ section h3 {
     background-color: var(--darkgreen);
 }
 
-.bg-skyblue {
+.bg-skyblue, .bg-sky-800 {
     background-color: var(--skyblue);
 }
 
@@ -315,6 +371,10 @@ section h3 {
     line-height: 12px;
 }
 
+.text-xss {
+    font-size: 11px;
+    line-height: 13px;
+}
 
 .white-badge {
     display: flex;
@@ -1069,29 +1129,72 @@ section h3 {
 }
 
 .enquire-next-btn {
-   height: 40px;
-   width: 100%;
-   border-radius: 100px;
-   margin-top: 40px;
-   align-self: flex-end;
+    height: 40px;
+    width: 100%;
+    border-radius: 100px;
+    margin-top: 40px;
+    align-self: flex-end;
 }
 
-.enquire-popup .popup-image-container{
+.enquire-popup .popup-image-container {
     height: 273px;
     width: 100%;
 }
 
-.enquire-popup .enquire-popup-details{
-    padding: 19px 25px 29px ;
+.enquire-popup .enquire-popup-details {
+    padding: 19px 25px 29px;
 }
 
-.popup-container .close-btn{
+.popup-container .close-btn {
     top: -10px;
     right: -10px;
     height: 32px;
     width: 32px;
     background-color: var(--sky-400);
     border-radius: 50%;
+}
+
+.popup-container .enquire-input {
+    height: 45px;
+    width: 100%;
+    background: var(--light-200);
+    border-radius: 8px;
+    padding: 11px 15px;
+    color: var(--black-2);
+}
+
+.popup-container .shift-pill , .popup-container .shift-pill-sm {
+    padding: 9px 18px;
+    height: 32px;
+    background: #EDEDED;
+    color: var(--black-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    border-radius: 90px;
+    width: fit-content;
+}
+
+.popup-container .shift-pill-sm {
+    color: var(--black);
+    font-weight: 400;
+    padding: 5px 11px;
+    height: 22px;
+    border-radius: 56px;
+}
+
+.popup-container .shift-pill.active, .popup-container .shift-pill-sm.active {
+    background: #C0DFFF;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.popup-container .shift-pill-sm.active {
+    font-weight: 500;
+    color: var(--black-1);
 }
 
 @media only screen and (max-width: 1024px) {}
