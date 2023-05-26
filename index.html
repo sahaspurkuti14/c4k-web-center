@@ -708,7 +708,7 @@
                 class="reviews-nav-item flex items-center font-normal justify-center text-sm color-black"
               >
                 <span class="font-bold">4.2</span>
-                <span>Google (5)</span>
+                <div class="flex items-center gap-2"><iconify-icon icon="flat-color-icons:google" class="text-lg"></iconify-icon> Google (5)</div>
               </div>
             </div>
             <button class="color-black-3 text-sm">Filter</button>
@@ -1623,7 +1623,7 @@
   </div>
 
   <!-- enquire popup - step 6 - add 'active' in classname to open -->
-  <div class="enquire-popup flex active justify-center items-center">
+  <div class="enquire-popup flex justify-center items-center">
     <div
       class="rounded-20 bg-white shadow-small popup-container relative"
       style="padding-left: 0; padding-right: 0"
@@ -1640,7 +1640,9 @@
         ></iconify-icon>
       </button>
       <h2 class="font-bold text-xl pl-20">Centre's nearby</h2>
-      <div class="bg-light-200 nearby-cards-container grid grid-cols-3 mt-3 gap-5">
+      <div
+        class="bg-light-200 nearby-cards-container grid grid-cols-3 mt-3 gap-5"
+      >
         <div class="nearby-card shadow-small rounded-10 overflow-hidden">
           <div class="nearby-img-container relative">
             <img
@@ -1650,39 +1652,64 @@
               width="260"
               alt="#"
             />
-            <div class="rating-pill flex items-center justify-center gap-1 text-xss">
-              <iconify-icon icon="iconamoon:star-fill" class="color-yellow"></iconify-icon>
+            <div
+              class="rating-pill flex items-center justify-center gap-1 text-xss"
+            >
+              <iconify-icon
+                icon="iconamoon:star-fill"
+                class="color-yellow"
+              ></iconify-icon>
               <span class="font-semibold">5.0</span>
               <span>(17)</span>
             </div>
             <button class="save-btn">
-              <iconify-icon icon="ph:heart-bold" class="text-white text-2xl"></iconify-icon>
+              <iconify-icon
+                icon="ph:heart-bold"
+                class="text-white text-2xl"
+              ></iconify-icon>
             </button>
           </div>
           <div class="nearby-content-area bg-white color-black-1">
             <h4 class="font-bold text-sm">Good Start Learning Melbourne</h4>
-            <span class="color-black-3 text-xs">Flinders Street, Melbourne</span>
+            <span class="color-black-3 text-xs"
+              >Flinders Street, Melbourne</span
+            >
             <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
               <div><span class="font-bold">Exceeding </span>NQS</div>
               <div class="flex items-center gap-1">
-                <iconify-icon icon="teenyicons:tick-circle-solid" class="color-darkgreen text-sm"></iconify-icon>
+                <iconify-icon
+                  icon="teenyicons:tick-circle-solid"
+                  class="color-darkgreen text-sm"
+                ></iconify-icon>
                 <span>Vacancies</span>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
               <div><span class="font-bold">$175 </span>avg. price/day</div>
               <div class="flex items-center gap-1">
-                <iconify-icon icon="ic:baseline-verified" class="color-berry text-sm"></iconify-icon>
+                <iconify-icon
+                  icon="ic:baseline-verified"
+                  class="color-berry text-sm"
+                ></iconify-icon>
                 <span>Verified</span>
               </div>
             </div>
 
             <div class="flex gap-1 mt-5">
-              <button class="nearby-btn green-outline flex items-center justify-center font-semibold">
+              <button
+                class="nearby-btn green-outline flex items-center justify-center font-semibold"
+              >
                 Arrange a visit
               </button>
-              <button class="nearby-btn rose-outline flex items-center justify-center font-semibold">
-                <div class="tick flex items-center justify-center"><iconify-icon icon="charm:tick" class="color-rose"></iconify-icon></div>
+              <button
+                class="nearby-btn rose-outline flex items-center justify-center font-semibold"
+              >
+                <div class="tick flex items-center justify-center">
+                  <iconify-icon
+                    icon="charm:tick"
+                    class="color-rose"
+                  ></iconify-icon>
+                </div>
                 Enquire
               </button>
             </div>
@@ -1697,39 +1724,64 @@
               width="260"
               alt="#"
             />
-            <div class="rating-pill flex items-center justify-center gap-1 text-xss">
-              <iconify-icon icon="iconamoon:star-fill" class="color-yellow"></iconify-icon>
+            <div
+              class="rating-pill flex items-center justify-center gap-1 text-xss"
+            >
+              <iconify-icon
+                icon="iconamoon:star-fill"
+                class="color-yellow"
+              ></iconify-icon>
               <span class="font-semibold">5.0</span>
               <span>(17)</span>
             </div>
             <button class="save-btn">
-              <iconify-icon icon="ph:heart-bold" class="text-white text-2xl"></iconify-icon>
+              <iconify-icon
+                icon="ph:heart-bold"
+                class="text-white text-2xl"
+              ></iconify-icon>
             </button>
           </div>
           <div class="nearby-content-area bg-white color-black-1">
             <h4 class="font-bold text-sm">Good Start Learning Melbourne</h4>
-            <span class="color-black-3 text-xs">Flinders Street, Melbourne</span>
+            <span class="color-black-3 text-xs"
+              >Flinders Street, Melbourne</span
+            >
             <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
               <div><span class="font-bold">Exceeding </span>NQS</div>
               <div class="flex items-center gap-1">
-                <iconify-icon icon="teenyicons:tick-circle-solid" class="color-darkgreen text-sm"></iconify-icon>
+                <iconify-icon
+                  icon="teenyicons:tick-circle-solid"
+                  class="color-darkgreen text-sm"
+                ></iconify-icon>
                 <span>Vacancies</span>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
               <div><span class="font-bold">$175 </span>avg. price/day</div>
               <div class="flex items-center gap-1">
-                <iconify-icon icon="ic:baseline-verified" class="color-berry text-sm"></iconify-icon>
+                <iconify-icon
+                  icon="ic:baseline-verified"
+                  class="color-berry text-sm"
+                ></iconify-icon>
                 <span>Verified</span>
               </div>
             </div>
 
             <div class="flex gap-1 mt-5">
-              <button class="nearby-btn green-outline flex items-center justify-center font-semibold">
+              <button
+                class="nearby-btn green-outline flex items-center justify-center font-semibold"
+              >
                 Arrange a visit
               </button>
-              <button class="nearby-btn rose-outline flex items-center justify-center font-semibold">
-                <div class="tick flex items-center justify-center"><iconify-icon icon="charm:tick" class="color-rose"></iconify-icon></div>
+              <button
+                class="nearby-btn rose-outline flex items-center justify-center font-semibold"
+              >
+                <div class="tick flex items-center justify-center">
+                  <iconify-icon
+                    icon="charm:tick"
+                    class="color-rose"
+                  ></iconify-icon>
+                </div>
                 Enquire
               </button>
             </div>
@@ -1744,39 +1796,64 @@
               width="260"
               alt="#"
             />
-            <div class="rating-pill flex items-center justify-center gap-1 text-xss">
-              <iconify-icon icon="iconamoon:star-fill" class="color-yellow"></iconify-icon>
+            <div
+              class="rating-pill flex items-center justify-center gap-1 text-xss"
+            >
+              <iconify-icon
+                icon="iconamoon:star-fill"
+                class="color-yellow"
+              ></iconify-icon>
               <span class="font-semibold">5.0</span>
               <span>(17)</span>
             </div>
             <button class="save-btn">
-              <iconify-icon icon="ph:heart-bold" class="text-white text-2xl"></iconify-icon>
+              <iconify-icon
+                icon="ph:heart-bold"
+                class="text-white text-2xl"
+              ></iconify-icon>
             </button>
           </div>
           <div class="nearby-content-area bg-white color-black-1">
             <h4 class="font-bold text-sm">Good Start Learning Melbourne</h4>
-            <span class="color-black-3 text-xs">Flinders Street, Melbourne</span>
+            <span class="color-black-3 text-xs"
+              >Flinders Street, Melbourne</span
+            >
             <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
               <div><span class="font-bold">Exceeding </span>NQS</div>
               <div class="flex items-center gap-1">
-                <iconify-icon icon="teenyicons:tick-circle-solid" class="color-darkgreen text-sm"></iconify-icon>
+                <iconify-icon
+                  icon="teenyicons:tick-circle-solid"
+                  class="color-darkgreen text-sm"
+                ></iconify-icon>
                 <span>Vacancies</span>
               </div>
             </div>
             <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
               <div><span class="font-bold">$175 </span>avg. price/day</div>
               <div class="flex items-center gap-1">
-                <iconify-icon icon="ic:baseline-verified" class="color-berry text-sm"></iconify-icon>
+                <iconify-icon
+                  icon="ic:baseline-verified"
+                  class="color-berry text-sm"
+                ></iconify-icon>
                 <span>Verified</span>
               </div>
             </div>
 
             <div class="flex gap-1 mt-5">
-              <button class="nearby-btn green-outline flex items-center justify-center font-semibold">
+              <button
+                class="nearby-btn green-outline flex items-center justify-center font-semibold"
+              >
                 Arrange a visit
               </button>
-              <button class="nearby-btn rose-outline flex items-center justify-center font-semibold">
-                <div class="tick flex items-center justify-center"><iconify-icon icon="charm:tick" class="color-rose"></iconify-icon></div>
+              <button
+                class="nearby-btn rose-outline flex items-center justify-center font-semibold"
+              >
+                <div class="tick flex items-center justify-center">
+                  <iconify-icon
+                    icon="charm:tick"
+                    class="color-rose"
+                  ></iconify-icon>
+                </div>
                 Enquire
               </button>
             </div>
