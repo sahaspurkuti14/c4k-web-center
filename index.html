@@ -14,6 +14,71 @@
     />
   </head>
   <body class="center-detail-page">
+    <div
+      class="center-page-topnav bg-white flex gap-4 justify-between items-center"
+    >
+      <div class="nav-items gap-5 flex items-center">
+        <a href="#" class="text-sm color-black-1">Overview</a>
+        <a href="#" class="text-sm color-black-1">Fees & vacancy</a>
+        <a href="#" class="text-sm color-black-1">Features</a>
+        <a href="#" class="text-sm color-black-1 active">Get to know us</a>
+        <a href="#" class="text-sm color-black-1">NQS</a>
+        <a href="#" class="text-sm color-black-1">Ratings</a>
+        <a href="#" class="text-sm color-black-1">Location</a>
+      </div>
+      <div class="flex items-center gap-5">
+        <div class="flex flex-col">
+          <div class="flex gap-1 items-center">
+            <iconify-icon
+              icon="mdi:tick-circle"
+              class="color-darkgreen"
+            ></iconify-icon>
+            <span class="font-normal text-xs color-black">Vacancies</span>
+          </div>
+          <div class="flex gap-1 items-baseline">
+            <span class="color-black text-lg font-bold">$173</span>
+            <span class="font-normal text-xs color-black-3"
+              >Avg price / day</span
+            >
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <div class="flex gap-2">
+            <button
+              class="outline-btn-sm outline-sky-800 flex items-center justify-center"
+            >
+              <iconify-icon icon="tabler:send"></iconify-icon>
+            </button>
+            <button
+              class="outline-btn-sm outline-rose flex items-center justify-center"
+            >
+              <iconify-icon icon="ph:heart-bold"></iconify-icon>
+            </button>
+          </div>
+          <div class="flex gap-2 items-center">
+            <button
+              class="action-btn bg-berry text-white font-semibold text-sm flex items-center justify-center gap-1"
+            >
+              <iconify-icon
+                icon="fluent:call-16-regular"
+                class="text-base"
+              ></iconify-icon>
+              Call
+            </button>
+            <button
+              class="action-btn bg-rose text-white font-semibold text-sm flex items-center justify-center gap-1"
+            >
+              <iconify-icon
+                icon="ph:chat-bold"
+                class="text-base"
+              ></iconify-icon>
+              Enquire
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="main-banner-section">
       <div class="container mx-auto banner-container">
         <div class="banner-left">
@@ -708,7 +773,13 @@
                 class="reviews-nav-item flex items-center font-normal justify-center text-sm color-black"
               >
                 <span class="font-bold">4.2</span>
-                <div class="flex items-center gap-2"><iconify-icon icon="flat-color-icons:google" class="text-lg"></iconify-icon> Google (5)</div>
+                <div class="flex items-center gap-2">
+                  <iconify-icon
+                    icon="flat-color-icons:google"
+                    class="text-lg"
+                  ></iconify-icon>
+                  Google (5)
+                </div>
               </div>
             </div>
             <button class="color-black-3 text-sm">Filter</button>
@@ -2081,6 +2152,684 @@
             class="enquire-next-btn bg-rose flex items-center justify-center font-semibold text-base text-white"
           >
             Next
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- :Live tour booking - step 1 - add 'active' in classname to open -->
+  <div class="enquire-popup flex justify-center items-center">
+    <div
+      class="rounded-20 bg-white shadow-small popup-container flex gap-85 relative"
+    >
+      <button
+        class="close-btn absolute flex items-center justify-center text-white"
+      >
+        <iconify-icon icon="iconamoon:close" class="text-2xl"></iconify-icon>
+      </button>
+      <button class="back-btn absolute flex items-center justify-center">
+        <iconify-icon
+          icon="ic:baseline-arrow-back-ios-new"
+          class="color-black-1"
+        ></iconify-icon>
+      </button>
+      <div class="flex flex-col items-center w-full" style="max-width: 310px">
+        <div style="margin-top: 10px">
+          <div
+            class="step-meter bg-gray relative rounded-25"
+            style="width: 117px; margin-bottom: 38px"
+          >
+            <span
+              class="bg-gradient-blue absolute top-0 left-0 h-full rounded-25"
+              style="width: 40%"
+            ></span>
+          </div>
+        </div>
+        <div class="w-full">
+          <span class="text-sm color-black-2"
+            >Sentia Early Learning Live Tour Booking</span
+          >
+          <h3 class="font-bold text-lg color-black-1 mt-5">
+            Tell us about yourself
+          </h3>
+        </div>
+        <div class="grid grid-cols-2 mt-3 gap-3">
+          <input
+            name="first_name"
+            placeholder="First Name*"
+            class="enquire-input font-medium text-sm"
+          />
+          <input
+            name="last_name"
+            placeholder="Last Name*"
+            class="enquire-input font-medium text-sm"
+          />
+          <input
+            name="email"
+            placeholder="Email*"
+            class="enquire-input font-medium text-sm col-span-2"
+          />
+          <input
+            name="phone"
+            placeholder="Phone*"
+            class="enquire-input font-medium text-sm col-span-2"
+          />
+        </div>
+        <div class="mt-6 flex justify-start w-full flex flex-col">
+          <div class="flex items-center gap-6 color-black-2 text-xs mt-6">
+            <iconify-icon
+              icon="mdi:tick-circle-outline"
+              class="text-sm"
+            ></iconify-icon>
+            <span>Save your details for next time</span>
+          </div>
+        </div>
+        <button
+          class="enquire-next-btn bg-rose flex items-center justify-center font-semibold text-base text-white"
+          style="margin-top: 27px"
+        >
+          Next
+        </button>
+      </div>
+      <div
+        class="bg-light-200 rounded-8 overflow-hidden flex flex-col"
+        style="max-width: 360px; overflow: hidden"
+      >
+        <div class="popup-image-container relative">
+          <div class="white-badge absolute top-15 left-15">
+            <iconify-icon
+              icon="ic:baseline-verified"
+              class="color-berry text-lg"
+            ></iconify-icon
+            ><span>Verified</span>
+          </div>
+          <img
+            src="https://www.careforkids.com.au/img/homepage-banner-top.webp"
+            class="h-full w-full object-cover"
+            loading="lazy"
+            alt="#"
+          />
+        </div>
+        <div class="enquire-popup-details flex flex-col gap-18 relative">
+          <div class="flex gap-18 text-xs color-black-1">
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="iconamoon:star-fill"
+                class="color-yellow text-xs"
+              ></iconify-icon>
+              <span class="font-semibold">5.0</span><span> (17)</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="teenyicons:tick-circle-solid"
+                class="color-darkgreen text-xs"
+              ></iconify-icon>
+              <span>Vacancies</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="material-symbols:shield-outline"
+                class="color-skyblue text-xs"
+              ></iconify-icon>
+              <span>Exceeding NQS</span>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="color-black-1 font-bold text-lg"
+              >Sentia Early Learning</span
+            >
+            <span class="color-black-2 text-xxs"
+              >450 Flinders Street, Melbourne, VIC 3000</span
+            >
+          </div>
+          <div class="text-xs color-black-1 font-bold">
+            $175 <span class="font-normal">avg. price/day</span>
+          </div>
+          <button class="absolute bottom-14 right-14">
+            <iconify-icon
+              icon="ph:heart-light"
+              class="text-xl color-light-600"
+            ></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- :Live tour booking - step 2  - add 'active' in classname to open -->
+  <div class="enquire-popup flex justify-center items-center">
+    <div
+      class="rounded-20 bg-white shadow-small popup-container flex gap-85 relative"
+    >
+      <button
+        class="close-btn absolute flex items-center justify-center text-white"
+      >
+        <iconify-icon icon="iconamoon:close" class="text-2xl"></iconify-icon>
+      </button>
+      <button class="back-btn absolute flex items-center justify-center">
+        <iconify-icon
+          icon="ic:baseline-arrow-back-ios-new"
+          class="color-black-1"
+        ></iconify-icon>
+      </button>
+      <div class="flex flex-col items-center w-full" style="max-width: 310px">
+        <div
+          class="flex w-full items-baseline gap-39 justify-end"
+          style="margin-top: 10px"
+        >
+          <div
+            class="step-meter bg-gray relative rounded-25"
+            style="width: 117px; margin-bottom: 38px"
+          >
+            <span
+              class="bg-gradient-blue absolute top-0 left-0 h-full rounded-25"
+              style="width: 40%"
+            ></span>
+          </div>
+          <button class="shift-pill-sm flex items-center">
+            Skip <iconify-icon icon="icon-park-outline:right"></iconify-icon>
+          </button>
+        </div>
+        <div class="h-full w-full flex flex-col justify-between">
+          <div class="flex flex-col justify-between gap-18">
+            <div>
+              <h3 class="font-bold text-lg color-black-1">
+                What care do you need?
+              </h3>
+              <div class="mt-2 flex gap-1 flex-wrap">
+                <span class="shift-pill active">Child 1</span>
+                <span
+                  class="rounded-full color-black-3 text-2xl bg-black-3 flex items-center justify-center"
+                  style="height: 32px; width: 32px"
+                  >+</span
+                >
+              </div>
+            </div>
+            <div>
+              <h4 class="font-semibold text-xs color-black-1">
+                Child’s birthday
+              </h4>
+              <div class="grid grid-cols-2 mt-1 gap-3">
+                <input
+                  name="month"
+                  placeholder="Month"
+                  class="enquire-input font-medium text-sm"
+                />
+                <input
+                  name="year"
+                  placeholder="Year"
+                  class="enquire-input font-medium text-sm"
+                />
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xs color-black-1">Care Days</h4>
+              <div class="mt-2 flex gap-1 flex-wrap">
+                <span class="shift-pill-sm active">Mon</span>
+                <span class="shift-pill-sm active">Tue</span>
+                <span class="shift-pill-sm">Wed</span>
+                <span class="shift-pill-sm">Thu</span>
+                <span class="shift-pill-sm">Fri</span>
+                <span class="shift-pill-sm">Sat</span>
+              </div>
+              <div class="shift-pill-sm mt-2 gap-1">
+                <iconify-icon icon="ph:moon" class="text-sm"></iconify-icon
+                >Overnight / evening
+              </div>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xs color-black-1">Start Date</h4>
+              <div class="mt-2 flex gap-x-1 gap-y-2 flex-wrap">
+                <span class="shift-pill-sm active">ASAP</span>
+                <span class="shift-pill-sm">In the next 30 days</span>
+                <span class="shift-pill-sm">3 months</span>
+                <span class="shift-pill-sm">6 months</span>
+                <span class="shift-pill-sm">12 months</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="enquire-next-btn bg-rose flex items-center justify-center font-semibold text-base text-white mt-5"
+              style="margin-top: 11px"
+              disabled
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-light-200 rounded-8 overflow-hidden flex flex-col"
+        style="max-width: 360px; overflow: hidden"
+      >
+        <div class="popup-image-container relative">
+          <div class="white-badge absolute top-15 left-15">
+            <iconify-icon
+              icon="ic:baseline-verified"
+              class="color-berry text-lg"
+            ></iconify-icon
+            ><span>Verified</span>
+          </div>
+          <img
+            src="https://www.careforkids.com.au/img/homepage-banner-top.webp"
+            class="h-full w-full object-cover"
+            loading="lazy"
+            alt="#"
+          />
+        </div>
+        <div class="enquire-popup-details flex flex-col gap-18 relative">
+          <div class="flex gap-18 text-xs color-black-1">
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="iconamoon:star-fill"
+                class="color-yellow text-xs"
+              ></iconify-icon>
+              <span class="font-semibold">5.0</span><span> (17)</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="teenyicons:tick-circle-solid"
+                class="color-darkgreen text-xs"
+              ></iconify-icon>
+              <span>Vacancies</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="material-symbols:shield-outline"
+                class="color-skyblue text-xs"
+              ></iconify-icon>
+              <span>Exceeding NQS</span>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="color-black-1 font-bold text-lg"
+              >Sentia Early Learning</span
+            >
+            <span class="color-black-2 text-xxs"
+              >450 Flinders Street, Melbourne, VIC 3000</span
+            >
+          </div>
+          <div class="text-xs color-black-1 font-bold">
+            $175 <span class="font-normal">avg. price/day</span>
+          </div>
+          <button class="absolute bottom-14 right-14">
+            <iconify-icon
+              icon="ph:heart-light"
+              class="text-xl color-light-600"
+            ></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- :Live tour booking - step 3  - add 'active' in classname to open -->
+  <div class="enquire-popup flex justify-center items-center">
+    <div
+      class="rounded-20 bg-white shadow-small popup-container flex gap-85 relative"
+    >
+      <button
+        class="close-btn absolute flex items-center justify-center text-white"
+      >
+        <iconify-icon icon="iconamoon:close" class="text-2xl"></iconify-icon>
+      </button>
+      <button class="back-btn absolute flex items-center justify-center">
+        <iconify-icon
+          icon="ic:baseline-arrow-back-ios-new"
+          class="color-black-1"
+        ></iconify-icon>
+      </button>
+      <div class="flex flex-col items-center w-full" style="max-width: 310px">
+        <div style="margin-top: 10px">
+          <div
+            class="step-meter bg-gray relative rounded-25"
+            style="width: 117px; margin-bottom: 38px"
+          >
+            <span
+              class="bg-gradient-blue absolute top-0 left-0 h-full rounded-25"
+              style="width: 40%"
+            ></span>
+          </div>
+        </div>
+        <div class="h-full w-full flex flex-col justify-between">
+          <div class="flex flex-col justify-between gap-18">
+            <div>
+              <h3
+                class="font-bold text-lg color-black-1"
+                style="max-width: 240px"
+              >
+                Which date would you like to book your live tour?
+              </h3>
+              <div class="mt-5 flex gap-1 items-center">
+                <div
+                  class="calender-item flex flex-col items-center justify-center"
+                >
+                  <span class="text-xxs">Mon</span>
+                  <span class="text-base font-bold">12</span>
+                  <span class="text-xxs">May</span>
+                </div>
+                <div
+                  class="calender-item flex flex-col items-center justify-center"
+                >
+                  <span class="text-xxs">Tue</span>
+                  <span class="text-base font-bold">12</span>
+                  <span class="text-xxs">May</span>
+                </div>
+                <div
+                  class="calender-item selected flex flex-col items-center justify-center"
+                >
+                  <span class="text-xxs">Wed</span>
+                  <span class="text-base font-bold">12</span>
+                  <span class="text-xxs">May</span>
+                </div>
+                <div
+                  class="calender-item available flex flex-col items-center justify-center"
+                >
+                  <span class="text-xxs">Thu</span>
+                  <span class="text-base font-bold">12</span>
+                  <span class="text-xxs">May</span>
+                </div>
+                <div
+                  class="calender-item available flex flex-col items-center justify-center"
+                >
+                  <span class="text-xxs">Fri</span>
+                  <span class="text-base font-bold">12</span>
+                  <span class="text-xxs">May</span>
+                </div>
+                <div
+                  class="calender-item flex flex-col items-center justify-center items-center justify-center"
+                >
+                  <span class="text-xxs">Sat</span>
+                  <span class="text-base font-bold">12</span>
+                  <span class="text-xxs">May</span>
+                </div>
+                <div
+                  class="calender-item flex flex-col items-center justify-center items-center justify-center"
+                >
+                  <span class="text-xxs">Sun</span>
+                  <span class="text-base font-bold">12</span>
+                  <span class="text-xxs">May</span>
+                </div>
+                <iconify-icon
+                  icon="mingcute:right-line"
+                  class="color-black-1"
+                ></iconify-icon>
+              </div>
+            </div>
+
+            <div class="mt-3 flex gap-4 items-center text-xss">
+              <div class="flex gap-1 items-center">
+                <span class="green-dot"></span>
+                <span>Available dates</span>
+              </div>
+              <div class="flex gap-1 items-center">
+                <span class="blue-filled-dot"></span>
+                <span>Booking date selected</span>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <h3 class="font-bold text-lg color-black-1">Time</h3>
+              <div class="mt-2 flex gap-1 flex-wrap">
+                <button class="shift-pill-sm green-pill-outline active">
+                  8:00am
+                </button>
+                <button class="shift-pill-sm green-pill-outline">8:00am</button>
+                <button class="shift-pill-sm green-pill-outline">8:00am</button>
+                <button class="shift-pill-sm green-pill-outline">8:00am</button>
+                <button class="shift-pill-sm green-pill-outline">8:00am</button>
+                <button class="shift-pill-sm green-pill-outline">8:00am</button>
+                <button class="shift-pill-sm green-pill-outline">8:00am</button>
+                <button class="shift-pill-sm green-pill-outline">8:00am</button>
+                <button class="shift-pill-sm green-pill-outline">8:00am</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="enquire-next-btn bg-rose flex items-center justify-center font-semibold text-base text-white mt-5"
+              style="margin-top: 60px"
+              disabled
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-light-200 rounded-8 overflow-hidden flex flex-col"
+        style="max-width: 360px; overflow: hidden"
+      >
+        <div class="popup-image-container relative">
+          <div class="white-badge absolute top-15 left-15">
+            <iconify-icon
+              icon="ic:baseline-verified"
+              class="color-berry text-lg"
+            ></iconify-icon
+            ><span>Verified</span>
+          </div>
+          <img
+            src="https://www.careforkids.com.au/img/homepage-banner-top.webp"
+            class="h-full w-full object-cover"
+            loading="lazy"
+            alt="#"
+          />
+        </div>
+        <div class="enquire-popup-details flex flex-col gap-18 relative">
+          <div class="flex gap-18 text-xs color-black-1">
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="iconamoon:star-fill"
+                class="color-yellow text-xs"
+              ></iconify-icon>
+              <span class="font-semibold">5.0</span><span> (17)</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="teenyicons:tick-circle-solid"
+                class="color-darkgreen text-xs"
+              ></iconify-icon>
+              <span>Vacancies</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="material-symbols:shield-outline"
+                class="color-skyblue text-xs"
+              ></iconify-icon>
+              <span>Exceeding NQS</span>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="color-black-1 font-bold text-lg"
+              >Sentia Early Learning</span
+            >
+            <span class="color-black-2 text-xxs"
+              >450 Flinders Street, Melbourne, VIC 3000</span
+            >
+          </div>
+          <div class="text-xs color-black-1 font-bold">
+            $175 <span class="font-normal">avg. price/day</span>
+          </div>
+          <button class="absolute bottom-14 right-14">
+            <iconify-icon
+              icon="ph:heart-light"
+              class="text-xl color-light-600"
+            ></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- :Live tour booking - step 4  - add 'active' in classname to open -->
+  <div class="enquire-popup active flex justify-center items-center">
+    <div
+      class="rounded-20 bg-white shadow-small popup-container flex gap-85 relative"
+    >
+      <button
+        class="close-btn absolute flex items-center justify-center text-white"
+      >
+        <iconify-icon icon="iconamoon:close" class="text-2xl"></iconify-icon>
+      </button>
+      <div class="flex flex-col items-center w-full" style="max-width: 310px">
+        <div style="margin-top: 10px">
+          <div
+            class="step-meter bg-gray relative rounded-25"
+            style="width: 117px; margin-bottom: 28px"
+          >
+            <span
+              class="bg-gradient-blue absolute top-0 left-0 h-full rounded-25"
+              style="width: 40%"
+            ></span>
+          </div>
+        </div>
+        <div class="h-full w-full flex flex-col justify-between">
+          <div class="flex flex-col justify-between gap-18">
+            <h3
+              class="font-bold text-lg color-black-1"
+              style="max-width: 240px"
+            >
+              Review Live Tour Booking
+            </h3>
+            <div class="center-detail-card flex flex-col gap-2">
+              <h4 class="color-black-1 font-semibold text-sm">
+                Sentia Early Learning Centre
+              </h4>
+              <div class="flex items-center gap-3">
+                <iconify-icon
+                  icon="ci:calendar-days"
+                  class="text-sm color-berry"
+                ></iconify-icon>
+                <span class="text-xs color-black-2"
+                  >Wednesday, 10 May 2023</span
+                >
+              </div>
+              <div class="flex items-center gap-3">
+                <iconify-icon
+                  icon="mdi:clock-outline"
+                  class="text-sm color-berry"
+                ></iconify-icon>
+                <span class="text-xs color-black-2">8:00am</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <iconify-icon
+                  icon="material-symbols:location-on-outline"
+                  class="text-sm color-berry"
+                ></iconify-icon>
+                <span class="text-xs color-black-2"
+                  >450 Flinders Street, Melbourne, VIC 3000</span
+                >
+              </div>
+            </div>
+
+            <div style="max-width: 240px;">
+              <h3 class="color-black-1 text-sm font-bold">Contact details</h3>
+              <div class="mt-3 flex flex-col gap-6">
+                <div class="grid grid-cols-3">
+                  <span class="col-span-1 font-semibold text-xs color-black-1">
+                    Name
+                  </span>
+                  <span class="col-span-2 text-xs color-black-2">
+                    Sarah 
+                  </span>
+                </div>
+                <div class="grid grid-cols-3">
+                  <span class="col-span-1 font-semibold text-xs color-black-1">
+                    Email
+                  </span>
+                  <span class="col-span-2 text-xs color-black-2">
+                    Sarah@gmail.com  
+                  </span>
+                </div>
+                <div class="grid grid-cols-3">
+                  <span class="col-span-1 font-semibold text-xs color-black-1">
+                    Number
+                  </span>
+                  <span class="col-span-2 text-xs color-black-2">
+                    0433333333 
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="captcha-container bg-light-200 flex items-center gap-3">
+              <input type="checkbox" />
+              <span class="font-medium text-xs color-black-1">I’m not a robot</span>
+              <iconify-icon icon="logos:recaptcha" class="text-3xl ml-2"></iconify-icon>
+            </div>
+          </div>
+          <div>
+            <button
+              class="enquire-next-btn bg-rose flex items-center justify-center font-semibold text-base text-white mt-5"
+              disabled
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-light-200 rounded-8 overflow-hidden flex flex-col"
+        style="max-width: 360px; overflow: hidden"
+      >
+        <div class="popup-image-container relative">
+          <div class="white-badge absolute top-15 left-15">
+            <iconify-icon
+              icon="ic:baseline-verified"
+              class="color-berry text-lg"
+            ></iconify-icon
+            ><span>Verified</span>
+          </div>
+          <img
+            src="https://www.careforkids.com.au/img/homepage-banner-top.webp"
+            class="h-full w-full object-cover"
+            loading="lazy"
+            alt="#"
+          />
+        </div>
+        <div class="enquire-popup-details flex flex-col gap-18 relative">
+          <div class="flex gap-18 text-xs color-black-1">
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="iconamoon:star-fill"
+                class="color-yellow text-xs"
+              ></iconify-icon>
+              <span class="font-semibold">5.0</span><span> (17)</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="teenyicons:tick-circle-solid"
+                class="color-darkgreen text-xs"
+              ></iconify-icon>
+              <span>Vacancies</span>
+            </div>
+            <div class="flex gap-1 items-center">
+              <iconify-icon
+                icon="material-symbols:shield-outline"
+                class="color-skyblue text-xs"
+              ></iconify-icon>
+              <span>Exceeding NQS</span>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <span class="color-black-1 font-bold text-lg"
+              >Sentia Early Learning</span
+            >
+            <span class="color-black-2 text-xxs"
+              >450 Flinders Street, Melbourne, VIC 3000</span
+            >
+          </div>
+          <div class="text-xs color-black-1 font-bold">
+            $175 <span class="font-normal">avg. price/day</span>
+          </div>
+          <button class="absolute bottom-14 right-14">
+            <iconify-icon
+              icon="ph:heart-light"
+              class="text-xl color-light-600"
+            ></iconify-icon>
           </button>
         </div>
       </div>

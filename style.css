@@ -55,6 +55,10 @@
     align-items: flex-end;
 }
 
+.items-baseline {
+    align-items: baseline;
+}
+
 .w-75 {
     width: 75%;
 }
@@ -1158,11 +1162,16 @@ section h3 {
     z-index: 50;
 }
 
-.enquire-popup .popup-container {
+.enquire-popup .popup-container,.enquire-popup .popup-container-sm {
     padding: 31px 48px;
     width: 100%;
     max-width: 860px;
     margin: 0 20px;
+}
+
+.enquire-popup .popup-container-sm {
+    padding: 13px 19px;
+    max-width: 360px;
 }
 
 .step-meter {
@@ -1245,6 +1254,15 @@ section h3 {
     padding: 5px 11px;
     height: 22px;
     border-radius: 56px;
+}
+
+.shift-pill-sm.green-pill-outline{
+    border: 1px solid #00B855;
+    background-color: #ffffff;
+} 
+
+.shift-pill-sm.green-pill-outline.active{
+    border: none;
 }
 
 .popup-container .shift-pill.active,
@@ -1358,6 +1376,88 @@ section h3 {
     border-radius: 50%;
     border: 1px solid #CACACA;
     font-size: 10px;
+}
+
+.center-page-topnav{
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 20px 20px;
+    height: 67px;
+}
+
+.center-page-topnav a.active{
+    color: var(--berry);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.outline-btn-sm {
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    border: 1px solid;
+    font-size: 12px;
+}
+
+.outline-btn-sm.outline-sky-800{
+    color: var(--skyblue);
+    border-color: var(--skyblue)
+}
+
+.outline-btn-sm.outline-rose{
+    color: var(--rose);
+    border-color: var(--rose)
+}
+
+.action-btn{
+    height: 40px;
+    padding: 10px 15px;
+    border-radius: 100px;
+}
+
+.calender-item{
+    border: 1.2px solid var(--light-500);
+    color: var(--light-500);
+    border-radius: 7px;
+    padding: 2px 7px;
+    width: 39px;
+}
+
+.calender-item.available {
+    border: 1.2px solid #06C270;
+    color: var(--black-1);
+}
+
+.calender-item.selected {
+    border: none;
+    background-color: var(--sky-300);
+    color: var(--black-1);
+}
+
+.green-dot, .blue-filled-dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+.green-dot {
+    border: 1.2px solid #00B855;
+}
+
+.blue-filled-dot {
+    background: #C0DFFF;
+}
+
+.popup-container .center-detail-card {
+    border-radius: 8px;
+    background-color: var(--light-200);
+    padding: 13px 17px;
+}
+
+.captcha-container{
+    height: 46px;
+    width: fit-content;
+    padding: 5px 8px 5px 12px;
 }
 
 @media only screen and (max-width: 1024px) {}
